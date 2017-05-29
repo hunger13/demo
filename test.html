@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择背景</title>
+
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            var select = document.getElementById("sel");
+            select.onchange = function(){
+                switch(select.value) {
+                    case  "1" :
+                    document.body.style.backgroundColor = "blue";
+                    break;
+                    case  "2" :
+                        document.body.style.backgroundColor = "red";
+                        break;
+                    case  "3" :
+                        document.body.style.backgroundColor = "green";
+                        break;
+                    case  "4" :
+                        document.body.style.backgroundColor = "yellow";
+                        break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <select id="sel">
+        <option value="1">blue</option>
+        <option value="2">red</option>
+        <option value="3">green</option>
+        <option value="4">yellow</option>
+    </select>
+
+</body>
+</html>
